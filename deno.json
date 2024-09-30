@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "dev": "deno run --allow-read --allow-env --allow-net --unstable-sloppy-imports main.ts",
+    "codegen": "pnpx @openapitools/openapi-generator-cli generate -i https://api.enso.finance/api-json --generator-name typescript-fetch -o gen/api --skip-validate-spec"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1",
+    "ethers": "npm:ethers@^6.13.2"
+  }
+}
